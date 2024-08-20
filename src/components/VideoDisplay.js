@@ -9,7 +9,7 @@ const VideoDisplay = ({ uploadSuccessful, resetUpload }) => {
   useEffect(() => {
     if (uploadSuccessful && !source) {
       if (!!window.EventSource) {
-        const newSource = new EventSource('http://52.86.211.221/stream');
+        const newSource = new EventSource('http://13.60.17.80/stream');
         
         newSource.onmessage = (event) => {
           // Parse the JSON data to extract frame and count

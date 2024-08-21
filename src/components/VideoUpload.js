@@ -28,7 +28,7 @@ const VideoUpload = ({ onUploadSuccess, onNewUpload }) => {
 
     try {
       setIsUploading(true);
-      const response = await axios.post('http://13.60.17.80/upload', formData, {
+      const response = await axios.post('http://13.51.20.104/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
